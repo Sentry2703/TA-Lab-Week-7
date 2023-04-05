@@ -11,8 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/homemade_apple"
         android:text="CodeZen"
         android:textAlignment="center"
+        android:textColor="#EF476F"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,10 @@
         android:layout_marginTop="24dp"
         android:text="A quote in 20sp and #073b4c with 8dp padding.\n\n“Rest and be kind, you don’t have to prove anything.”\n – Jack Kerouac"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Quote"
+        android:textSize="20sp"
+        android:textColor="#073B4C"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="@+id/banner"
         app:layout_constraintStart_toStartOf="@+id/banner"
         app:layout_constraintTop_toBottomOf="@+id/banner" />
@@ -36,9 +42,23 @@
         android:layout_marginTop="24dp"
         android:text="“There are only two ways to live your life. One is as if nothing is a miracle. The other is as if everything is a miracle.”\n – Albert Einstein"
         android:textAlignment="center"
+        android:fontFamily="@font/homemade_apple"
+        android:textAppearance="@style/TextAppearance.Quote"
         app:layout_constraintEnd_toEndOf="@+id/mainQuote"
         app:layout_constraintStart_toStartOf="@+id/mainQuote"
         app:layout_constraintTop_toBottomOf="@+id/mainQuote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondQuote"
+        android:layout_marginTop="15dp"
+        android:text="Made by Tunji Adewoye"
+        android:textAppearance="@style/TextAppearance.Quote"
+        android:fontFamily="@font/homemade_apple"
+        />
 
     <ImageView
         android:id="@+id/banner"
@@ -48,5 +68,9 @@
         app:layout_constraintEnd_toEndOf="@+id/heading"
         app:layout_constraintStart_toStartOf="@+id/heading"
         app:layout_constraintTop_toBottomOf="@+id/heading"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/zen"
+        android:scaleType="centerInside"
+        android:scaleX="3.2"
+        android:scaleY="1.1"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
